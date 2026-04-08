@@ -24,6 +24,9 @@
     "shadcn-ui": "^0.9.5",
     "tailwind-merge": "^3.5.0"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",

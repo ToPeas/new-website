@@ -1,6 +1,6 @@
 {
   "build": {
-    "installCommand": "npm install",
+    "installCommand": "npm install --registry https://registry.npmjs.org",
     "buildCommand": "npm run build",
     "publishDir": "out"
   }
