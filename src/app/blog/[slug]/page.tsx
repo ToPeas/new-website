@@ -5,11 +5,25 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 
+const slugs = [
+  "getting-started-nextjs-app-router",
+  "why-switched-tailwind-css",
+  "building-accessible-react-components",
+  "typescript-generics-practical-guide",
+  "web-performance-core-web-vitals",
+  "state-management-2025",
+];
+
+export function generateStaticParams() {
+  return slugs.map((slug) => ({ slug }));
+}
+
 export const metadata: Metadata = {
   title: "Blog Post — Dev",
 };
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
+  void params;
   return (
     <div className="container mx-auto max-w-3xl px-4 py-16 space-y-8">
       <Button variant="ghost" size="sm" asChild className="-ml-2">
